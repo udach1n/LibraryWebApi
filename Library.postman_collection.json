@@ -1,0 +1,749 @@
+{
+	"info": {
+		"_postman_id": "21ac196d-e796-432b-bce8-731a9bdf5aea",
+		"name": "Library",
+		"description": "# Introduction\nThe library has users and books. There are 2 types of users admin and user. The user can take books, but take no more than 3 books.The user can take books from the library and the admin can delete, add to the library, receive a report which books are more than 1 month in the hands of the user.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21066030"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44377/Anonymous/AllBooks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/Anonymous/AllBooks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Anonymous",
+						"AllBooks"
+					]
+				},
+				"description": "Show all books"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Anonymous/AllBooks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Anonymous",
+								"AllBooks"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Anonymous/BookByTitle?title=b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/Anonymous/BookByTitle?title=b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Anonymous",
+						"BookByTitle"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "b"
+						}
+					]
+				},
+				"description": "Show all books are containing \"b\""
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Anonymous/BookByTitle?title=b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Anonymous",
+								"BookByTitle"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "b"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Account/Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login\": \"pop\",\r\n  \"password\": \"1234\",\r\n  \"passwordConfirm\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44377/Account/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Account",
+						"Register"
+					]
+				},
+				"description": "Register new user"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Account/Register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Account",
+								"Register"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Account/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login\": \"1111\",\r\n  \"password\": \"1111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44377/Account/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Account",
+						"Login"
+					]
+				},
+				"description": "Login user"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Account/Login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Account",
+								"Login"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Account/Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/Account/Logout",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Account",
+						"Logout"
+					]
+				},
+				"description": "Logout"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Account/Logout",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Account",
+								"Logout"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/User/User`sBooks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/User/User`sBooks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"User",
+						"User`sBooks"
+					]
+				},
+				"description": "All books of the currently logged in user"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/User/User`sBooks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"User",
+								"User`sBooks"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/User/User`sBook?idBook=4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/User/User`sBook?idBook=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"User",
+						"User`sBook"
+					],
+					"query": [
+						{
+							"key": "idBook",
+							"value": "4"
+						}
+					]
+				},
+				"description": "does the user have a book with idBook 2"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/User/User`sBook?idBook=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"User",
+								"User`sBook"
+							],
+							"query": [
+								{
+									"key": "idBook",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/User/DelBookList?delBook=2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/User/DelBookList?delBook=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"User",
+						"DelBookList"
+					],
+					"query": [
+						{
+							"key": "delBook",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Delete book with idBook 2"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/User/DelBookList?delBook=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"User",
+								"DelBookList"
+							],
+							"query": [
+								{
+									"key": "delBook",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/User/AddBookList?idbook=4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/User/AddBookList?idbook=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"User",
+						"AddBookList"
+					],
+					"query": [
+						{
+							"key": "idbook",
+							"value": "4"
+						}
+					]
+				},
+				"description": "Add book with idBook 4 to user`s list"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/User/AddBookList?idbook=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"User",
+								"AddBookList"
+							],
+							"query": [
+								{
+									"key": "idbook",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Admin/InfoUser?iduser=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/Admin/InfoUser?iduser=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Admin",
+						"InfoUser"
+					],
+					"query": [
+						{
+							"key": "iduser",
+							"value": "2"
+						}
+					]
+				},
+				"description": "information about the user's books that he has in his hands for more than 1 month"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Admin/InfoUser?iduser=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Admin",
+								"InfoUser"
+							],
+							"query": [
+								{
+									"key": "iduser",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Admin/AddBookLibrary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"I\",\r\n  \"year\": \"2013-01-23T09:51:58.391Z\",\r\n  \"author\": \"I\",\r\n  \"genre\": \"I\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44377/Admin/AddBookLibrary",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Admin",
+						"AddBookLibrary"
+					]
+				},
+				"description": "Add book to Library by admin"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Admin/AddBookLibrary",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Admin",
+								"AddBookLibrary"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "https://localhost:44377/Admin/DelBookLibrary?idBook=17",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44377/Admin/DelBookLibrary?idBook=18",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"Admin",
+						"DelBookLibrary"
+					],
+					"query": [
+						{
+							"key": "idBook",
+							"value": "18"
+						}
+					]
+				},
+				"description": "Delete book with IdBook 17 in Library by admin"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44377/Admin/DelBookLibrary?idBook=17",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44377",
+							"path": [
+								"Admin",
+								"DelBookLibrary"
+							],
+							"query": [
+								{
+									"key": "idBook",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

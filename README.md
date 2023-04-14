@@ -2,7 +2,7 @@
 
 My Task:
 
-The Library has users and books. There are 2 types of users admin and user. The user can take books, but take no ore than 3 books.
+The Library has users and books. There are 2 types of users admin and user. The user can take books, but take no more than 3 books.
 
 The user can take books from the Library and the admin can delete, add to the library, receive a report which books are more than 1 month in the hands of the user.
 
